@@ -1,1 +1,112 @@
-<!doctype html><html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Music Space | Ahmad Danil</title><link rel="stylesheet" href="style.css"></head><body><nav><a class="logo" id="secretLogo" href="index.html"><img src="motion1.gif" alt=""><span>Ahmad Danil</span></a><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="portofolio.html">Portfolio</a></li><li><a href="skills.html">Skills</a></li><li><a class="active" href="music.html">Music</a></li><li><a href="games.html">Games</a></li><li><a href="social.html">Social</a></li><li><a href="contact.html">Contact</a></li></ul></nav><main><section class="page-title"><span class="eyebrow">SOUNDTRACK OF MY DAYS</span><h1>Music Space</h1><p>Lagu-lagu yang menemani proses, ide, dan suasana.</p></section><section class="music-library"><div class="section-heading"><span class="eyebrow">MY FAVORITES</span><h2>Favorite tracks</h2><p>Klik cover untuk memutar file audio yang tersedia di website.</p></div><div class="music-grid"><button class="music-card" type="button" data-track="song1.mp3" data-title="Letdown" data-artist="Radiohead"><img src="cover1.png" alt="Letdown cover"><span class="music-card-copy"><b>Letdown</b><small>Radiohead</small><em>▶ PLAY TRACK</em></span></button><button class="music-card" type="button" data-track="song2.mp3" data-title="Impostor Syndrome" data-artist="Sidney Gish"><img src="cover2.png" alt="Impostor Syndrome cover"><span class="music-card-copy"><b>Impostor Syndrome</b><small>Sidney Gish</small><em>▶ PLAY TRACK</em></span></button></div><div class="audio-dock"><div class="audio-now"><span class="eyebrow">NOW PLAYING</span><b id="nowPlayingTitle">Pilih lagu untuk mulai mendengarkan</b><small id="nowPlayingArtist">Local audio player</small></div><audio id="audioPlayer" controls preload="metadata"><source src="song1.mp3" type="audio/mpeg"></audio></div></section><section class="spotify-section"><div class="section-heading"><span class="eyebrow">MY PLAYLIST</span><h2>More from Spotify</h2><p>Playlist Spotify yang sebelumnya sudah ada tetap dipertahankan.</p></div><iframe title="Ahmad Danil Spotify playlist" style="border-radius:18px" src="https://open.spotify.com/embed/playlist/1V4jELbGyrXCFncR5xhvay?utm_source=generator&theme=0" width="100%" height="380" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></section></main><div id="secret-player"><button id="close-player" type="button">✕</button><video id="rick-video" width="320" controls preload="none"><source src="rickroll.mp4" type="video/mp4"></video></div><footer>© 2026 Ahmad Danil · Music Space</footer><div id="achievement">🏆 Achievement Unlocked: Music Explorer</div><script src="main.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music | Ahmad Danil</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="logo" id="secretLogo">
+    <img src="motion1.gif">
+  </div>
+
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="portofolio.html">Portfolio</a></li>
+    <li><a href="skills.html">Skills</a></li>
+    <li><a class="active" href="music.html">Music</a></li>
+    <li><a href="games.html">Games</a></li>
+    <li><a href="social.html">Social</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<section class="page-title">
+  <h1>Music Space</h1>
+  <p>Favorite songs • playlist • mood</p>
+</section>
+
+<section class="favorite-section">
+
+  <h2>My Favorite Song</h2>
+
+<section class="music-grid">
+
+  <div class="music-card"
+       onclick="playMusic('song1.mp3', this)">
+
+    <img src="cover1.png">
+
+    <div class="music-overlay">
+      <h3>Letdown</h3>
+      <p>Radiohead</p>
+    </div>
+
+  </div>
+
+  <div class="music-card"
+       onclick="playMusic('song2.mp3', this)">
+
+    <img src="cover2.png">
+
+    <div class="music-overlay">
+      <h3>Impostor Syndrome</h3>
+      <p>Sidney Gish</p>
+    </div>
+
+  </div>
+
+</section>
+
+<audio id="audioPlayer"></audio>
+
+<section class="spotify-section">
+
+  <h2>My Playlist</h2>
+
+  <iframe
+    data-testid="embed-iframe"
+    style="border-radius:12px"
+    src="https://open.spotify.com/embed/playlist/1V4jELbGyrXCFncR5xhvay?utm_source=generator&theme=0"
+    width="100%"
+    height="352"
+    frameborder="0"
+    allowfullscreen=""
+    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+    loading="lazy">
+  </iframe>
+
+</section>
+
+<div id="secret-player">
+
+  <button id="close-player">
+    ✕
+  </button>
+
+ <video
+  id="rick-video"
+  width="320"
+  controls
+  preload="none">
+
+   <source
+     src="rickroll.mp4"
+     type="video/mp4">
+
+  </video>
+
+</div>
+
+<div id="achievement">
+  🏆 Achievement Unlocked:
+  Music Explorer
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
